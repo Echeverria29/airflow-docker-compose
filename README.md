@@ -30,6 +30,8 @@ Este proyecto tiene como objetivo enseñar cómo configurar y ejecutar **Apache 
 git clone https://github.com/Echeverria29/airflow-docker-compose
 cd airflow-docker-compose
 ```
+### Puedes desactivar los Dags de ejemplo
+AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
 
 ### Paso 2: Crear archivo `.env`
 

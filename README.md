@@ -65,12 +65,6 @@ Antes de ejecutar los servicios, es necesario aplicar las migraciones de la base
 docker compose up airflow-init
 ```
 
-Una vez terminado, deberías ver un mensaje como:
-
-```bash
-Admin user airflow created
-```
-
 ### Paso 5: Ejecutar Airflow
 
 Ahora puedes iniciar todos los servicios necesarios:

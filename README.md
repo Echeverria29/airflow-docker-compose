@@ -100,13 +100,13 @@ Significa que no tienes permisos de edición.
 Para cambiar un solo archivo:
 
 ```bash
-sudo chown zeus:zeus /home/tu-usuario/airflow-docker-compose/dags/basic_dag.py
+sudo chown tu-usuario:tu-usuario /home/tu-usuario/airflow-docker-compose/dags/basic_dag.py
 ```
 
 Para cambiar todo el directorio del proyecto:
 
 ```bash
-sudo chown -R zeus:zeus /home/tu-usuario/airflow-docker-compose
+sudo chown -R tu-usuario:tu-usuario /home/tu-usuario/airflow-docker-compose
 ```
 
 ### ✅ Asegurar permisos de escritura

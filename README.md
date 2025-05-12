@@ -106,13 +106,13 @@ Significa que no tienes permisos de edición.
 Para cambiar un solo archivo:
 
 ```bash
-sudo chown zeus:zeus /home/zeus/airflow-prueba/dags/basic_dag.py
+sudo chown zeus:zeus /home/tu-usuario/airflow-docker-compose/dags/basic_dag.py
 ```
 
 Para cambiar todo el directorio del proyecto:
 
 ```bash
-sudo chown -R zeus:zeus /home/zeus/airflow-prueba
+sudo chown -R zeus:zeus /home/tu-usuario/airflow-docker-compose
 ```
 
 ### ✅ Asegurar permisos de escritura
@@ -120,13 +120,13 @@ sudo chown -R zeus:zeus /home/zeus/airflow-prueba
 Para un archivo:
 
 ```bash
-chmod u+w /home/zeus/airflow-prueba/dags/basic_dag.py
+chmod u+w /home/tu-usuario/airflow-docker-compose/dags/basic_dag.py
 ```
 
 Para toda la carpeta:
 
 ```bash
-chmod -R u+rw /home/zeus/airflow-prueba
+chmod -R u+rw /home/tu-usuario/airflow-docker-compose
 ```
 
 ---

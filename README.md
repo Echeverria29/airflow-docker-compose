@@ -57,7 +57,9 @@ Antes de ejecutar los servicios, es necesario aplicar las migraciones de la base
 docker compose up airflow-init
 ```
 ### Dejar este parametro en False(opcional)
-Variable: AIRFLOW__CORE__LOAD_EXAMPLES(Archivo airflow.cfg)
+Variable: AIRFLOW__CORE__LOAD_EXAMPLES
+
+(Archivo airflow.cfg)
 load_examples = False
 
 ### Paso 4: Ejecutar Airflow
@@ -67,10 +69,40 @@ Ahora puedes iniciar todos los servicios necesarios:
 ```bash
 docker compose up
 ```
+## Acceso por defecto
+
+- **Usuario:** `airflow`  
+- **Contraseña:** `airflow`
 
 Airflow estará disponible en: [http://localhost:8080](http://localhost:8080)
 
 ---
+## Conexión
+
+Paso 1: Abre la interfaz de Airflow
+Abre tu navegador y visita:
+👉 http://localhost:8080
+
+📍 Paso 2: Agregar una nueva conexión
+En el menú superior, ve a Admin → Connections.
+
+Haz clic en el botón azul "+ Add a new record" (parte superior derecha).
+
+📍 Paso 3: Completar los campos de la conexión
+Rellena el formulario con esta información:
+
+Campo	Valor
+Conn Id	google_cloud_default
+Conn Type	Google Cloud
+Keyfile JSON	Pega aquí el contenido completo del archivo JSON de tu service account
+
+💡 Nota: No subas el archivo .json, simplemente abre el archivo con un editor de texto, copia todo su contenido y pégalo en el campo "Keyfile JSON".
+
+📍 Paso 4: Guardar la conexión
+Haz clic en Save.
+
+Si todo está correcto, Airflow ya puede interactuar con BigQuery y Cloud Storage usando esa conexión.
+
 
 ## Solución a errores de permisos en WSL/Linux
 
@@ -109,8 +141,3 @@ rm -rf <directorio-del-proyecto>
 ```
 
 ---
-
-## Acceso por defecto
-
-- **Usuario:** `airflow`  
-- **Contraseña:** `airflow`

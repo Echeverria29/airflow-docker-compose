@@ -70,10 +70,8 @@ Ahora puedes iniciar todos los servicios necesarios:
 docker compose up
 ```
 ## Antes de ejecutar esperar que todos los conetenedores esten en (healthy)
-(env) zeus@DESKTOP-TAAC7OA:~/docker-airflow-gcp-1$ docker ps
-CONTAINER ID   IMAGE                  COMMAND                  CREATED         STATUS                   PORTS                    NAMES
-81549b93b2bf   apache/airflow:3.0.0   "/usr/bin/dumb-init …"   5 minutes ago   Up 2 minutes (healthy)   8080/tcp                 docker-airflow-gcp-1-airflow-worker-1
-
+STATUS
+Up 2 minutes (healthy)
 
 ## Acceso por defecto
 

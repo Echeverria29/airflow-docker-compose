@@ -73,12 +73,7 @@ docker compose up
 (env) zeus@DESKTOP-TAAC7OA:~/docker-airflow-gcp-1$ docker ps
 CONTAINER ID   IMAGE                  COMMAND                  CREATED         STATUS                   PORTS                    NAMES
 81549b93b2bf   apache/airflow:3.0.0   "/usr/bin/dumb-init …"   5 minutes ago   Up 2 minutes (healthy)   8080/tcp                 docker-airflow-gcp-1-airflow-worker-1
-47a994373a9d   apache/airflow:3.0.0   "/usr/bin/dumb-init …"   5 minutes ago   Up 3 minutes (healthy)   8080/tcp                 docker-airflow-gcp-1-airflow-dag-processor-1
-239b0237cf54   apache/airflow:3.0.0   "/usr/bin/dumb-init …"   5 minutes ago   Up 3 minutes (healthy)   8080/tcp                 docker-airflow-gcp-1-airflow-triggerer-1
-53183e879d8b   apache/airflow:3.0.0   "/usr/bin/dumb-init …"   5 minutes ago   Up 3 minutes (healthy)   8080/tcp                 docker-airflow-gcp-1-airflow-scheduler-1
-40cc9b7a3a23   apache/airflow:3.0.0   "/usr/bin/dumb-init …"   5 minutes ago   Up 3 minutes (healthy)   0.0.0.0:8080->8080/tcp   docker-airflow-gcp-1-airflow-apiserver-1
-65b876b0e936   postgres:13            "docker-entrypoint.s…"   5 minutes ago   Up 5 minutes (healthy)   5432/tcp                 docker-airflow-gcp-1-postgres-1
-ba62731ab4b4   redis:7.2-bookworm     "docker-entrypoint.s…"   5 minutes ago   Up 5 minutes (healthy)   6379/tcp                 docker-airflow-gcp-1-redis-1
+
 
 ## Acceso por defecto
 
